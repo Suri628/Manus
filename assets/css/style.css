@@ -558,3 +558,11 @@ button:hover, .btn:hover, a.btn:hover {
     /* 5. 可选：设置圆角或边框 */
     border-radius: 0.5rem; 
 }
+
+.justify-text {
+    /* 核心代码：设置两端对齐 */
+    text-align: justify; 
+    
+    /* 可选：为了让两端对齐效果更自然，可以设置一个固定的行高 */
+    line-height: 1.6; 
+}
