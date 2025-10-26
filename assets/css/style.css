@@ -492,5 +492,69 @@ button:hover, .btn:hover, a.btn:hover {
   nav, footer {
     display: none;
   }
+
 }
 
+/* Image Container - each figure width 30%*/
+.image-container-width30 {
+    /* 1. 核心：启用 Flex 布局，使子元素并排 */
+    display: flex; 
+    
+    /* 2. 可选：确保所有子元素都在一行，不换行 */
+    flex-wrap: nowrap; 
+    
+    /* 3. 可选：在容器内居中图片组 */
+    justify-content: center; 
+    
+    /* 4. 可选：给图片组与上下元素留出间距 */
+    margin: 20px 0;
+}
+
+.image-container-width30 img {
+    /* 1. 核心：让每张图片自动占据可用空间 */
+    flex-grow: 1; 
+    
+    /* 2. 核心：设置最大宽度（例如：每张图片最多占 50% 减去间距）*/
+    max-width: 30%; 
+    
+    /* 3. 保持图片比例 */
+    height: auto; 
+    
+    /* 4. 给图片之间留出间距 */
+    margin: 0 3%; 
+    
+    /* 5. 可选：设置圆角或边框 */
+    border-radius: 0.5rem; 
+}
+
+/* Image Container - each figure width 45%*/
+.image-container-width45 {
+    /* 1. 核心：启用 Flex 布局，使子元素并排 */
+    display: flex; 
+    
+    /* 2. 可选：确保所有子元素都在一行，不换行 */
+    flex-wrap: nowrap; 
+    
+    /* 3. 可选：在容器内居中图片组 */
+    justify-content: center; 
+    
+    /* 4. 可选：给图片组与上下元素留出间距 */
+    margin: 20px 0;
+}
+
+.image-container-width45 img {
+    /* 1. 核心：让每张图片自动占据可用空间 */
+    flex-grow: 1; 
+    
+    /* 2. 核心：设置最大宽度（例如：每张图片最多占 50% 减去间距）*/
+    max-width: 45%; 
+    
+    /* 3. 保持图片比例 */
+    height: auto; 
+    
+    /* 4. 给图片之间留出间距 */
+    margin: 0 3%; 
+    
+    /* 5. 可选：设置圆角或边框 */
+    border-radius: 0.5rem; 
+}
