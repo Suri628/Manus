@@ -139,6 +139,16 @@ footer .container {
   gap: 1.5rem;
 }
 
+.container1 {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
 @media (min-width: 768px) {
   footer .container {
     flex-direction: row;
@@ -313,7 +323,24 @@ button, .btn, a.btn {
   text-decoration: none;
   display: inline-block;
   transition: all 0.2s ease;
-  text-align: left;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn1 {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--slate-200);
+  border-radius: 0.5rem;
+  background-color: var(--riri-green);
+  color: var(--slate-900);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  justify-content: center;
   min-height: 4rem;
   display: flex;
   align-items: center;
@@ -593,4 +620,19 @@ button:hover, .btn:hover, a.btn:hover {
     
     /* 可选：为了让两端对齐效果更自然，可以设置一个固定的行高 */
     line-height: 1.6; 
+}
+
+.button-row {
+    /* 1. 核心：启用 Flexbox 布局 */
+    display: flex;
+    
+    /* 2. (可选) 设置水平对齐方式 */
+    justify-content: center;  /* 居中对齐 */
+    /* justify-content: flex-start; */ /* 左对齐（默认） */
+    
+    /* 3. (可选) 设置按钮之间的间距 */
+    gap: 1rem;  /* (推荐) 1rem = 16px 的间距 */
+    
+    /* 4. (可选) 确保它们在小屏幕上也能正常显示 */
+    flex-wrap: wrap; 
 }
