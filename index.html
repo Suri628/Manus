@@ -23,21 +23,28 @@
     </nav>
 
     <!-- Main Content -->
-    <div style="display: flex; flex-direction: column; min-height: 100vh;">
+    <div class="page-shell">
         <main>
             <!-- Header Section -->
             <header>
                 <div class="container">
+                    <span class="hero-eyebrow">Educator Playbook</span>
                     <h1>AI Evaluation: Manus for Chemistry Educators</h1>
-                    <h2>Evaluating the Role of Manus 1.5 in Chemistry Teaching and Learning</h2>
+                    <h2 class="hero-subtitle">Evaluating the Role of Manus 1.5 in Chemistry Teaching and Learning</h2>
                     <p class="credits">Created by Betty · Cathy · Suri — CTL1615H (UofT OISE)</p>
-                    <p>Manus AI (from the Latin word for "hand") is the world's first fully autonomous AI agent designed to execute complex, multi-step tasks independently with minimal human supervision. Unlike traditional AI chatbots that simply provide information or suggestions, Manus AI can plan, research, execute, and deliver complete results—functioning more like a capable assistant than a passive tool.This Blog shows Manus AI as a case study to systematically analyze this new AI tool across five dimensions: pedagogical, technical, critical, ethical, and metacognitive.</p>
+                    <p class="hero-description">Manus AI (from the Latin word for "hand") is the world's first fully autonomous AI agent designed to execute complex, multi-step tasks independently with minimal human supervision. Unlike traditional chatbots that simply provide information or suggestions, Manus AI can plan, research, execute, and deliver complete results—functioning more like a capable assistant than a passive tool.</p>
+                    <p class="hero-description">This project offers a guided evaluation for chemistry educators, using Manus AI as a case study across five dimensions: pedagogical, technical, critical, ethical, and metacognitive.</p>
                 </div>
             </header>
 
             <!-- Section 1: Demos & Functions -->
             <section>
                 <div class="container">
+                    <div class="section-header centered">
+                        <span class="section-eyebrow">Interactive Demos</span>
+                        <h2>Scenarios & Functions</h2>
+                        <p class="section-lead">Jump into guided Manus experiences that illustrate how chemistry educators can design lessons, visualizations, and communities with autonomous AI.</p>
+                    </div>
                     <div class="two-column">
                         <!-- Scenarios Card -->
                         <div class="card-bobo card-tall">
@@ -77,7 +84,11 @@
             <!-- Section 2: Five Dimensions -->
             <section id="five-dimensions" class="light-bg">
                 <div class="container">
-                    <h2 style="text-align: center; margin-bottom: 2rem;">Five Dimensions of AI Evaluation</h2>
+                    <div class="section-header centered">
+                        <span class="section-eyebrow">Evaluation Framework</span>
+                        <h2>Five Dimensions of AI Evaluation</h2>
+                        <p class="section-lead">Explore the lenses we use to assess Manus—from classroom impact to technical resilience and ethical safeguards.</p>
+                    </div>
                     <div class="grid-5">
                         <a href="https://www.notion.so/Pedagogical-Dimension-2920e5075bc780808819ef388d0c9ccc" class="grid-card pedagogical">Pedagogical</a>
                         <a href="https://www.notion.so/Technical-Dimension-2920e5075bc781f8af1cd4f8657c5e12" class="grid-card technical">Technical</a>
@@ -91,9 +102,14 @@
             <!-- Section 3: Legal & Policies -->
             <section id="legal">
                 <div class="container">
-                    <div class="card">
+                    <div class="section-header centered">
+                        <span class="section-eyebrow">Governance & Safety</span>
                         <h2>Research on Legal & Policies</h2>
-                        <div style="text-align: center; margin-top: 1.5rem;">
+                        <p class="section-lead">Understand the safeguards, terms of use, and compliance obligations that shape Manus deployments in education.</p>
+                    </div>
+                    <div class="card insight-card">
+                        <p>Review our curated brief on privacy, intellectual property, and institutional policy questions that arise when adopting autonomous AI in classrooms.</p>
+                        <div class="card-actions">
                             <a href="./legal.html" class="btn btn-primary">Read Full Legal & Policies</a>
                         </div>
                     </div>
@@ -101,24 +117,32 @@
             </section>
 
             <!--Giscus -->
-            <section id="Comments">
+            <section id="Comments" class="light-bg">
                 <div class="container">
-                    <h2 style="text-align: center; margin-bottom: 2rem;">What do you think of our website? Leave a comment!</h2>
-                    <script src="https://giscus.app/client.js"
-                            data-repo="Suri628/Manus"
-                            data-repo-id="R_kgDOQIMbgg"
-                            data-category="General"
-                            data-category-id="DIC_kwDOQIMbgs4CxBuz"
-                            data-mapping="pathname"
-                            data-strict="0"
-                            data-reactions-enabled="1"
-                            data-emit-metadata="0"
-                            data-input-position="bottom"
-                            data-theme="preferred_color_scheme"
-                            data-lang="en"
-                            crossorigin="anonymous"
-                            async>
-                    </script>
+                    <div class="section-header centered">
+                        <span class="section-eyebrow">Join the Conversation</span>
+                        <h2>What do you think of our website?</h2>
+                        <p class="section-lead">Share feedback, questions, or classroom ideas with fellow educators below.</p>
+                    </div>
+                    <div class="card comment-card">
+                        <div class="comment-embed">
+                            <script src="https://giscus.app/client.js"
+                                    data-repo="Suri628/Manus"
+                                    data-repo-id="R_kgDOQIMbgg"
+                                    data-category="General"
+                                    data-category-id="DIC_kwDOQIMbgs4CxBuz"
+                                    data-mapping="pathname"
+                                    data-strict="0"
+                                    data-reactions-enabled="1"
+                                    data-emit-metadata="0"
+                                    data-input-position="bottom"
+                                    data-theme="preferred_color_scheme"
+                                    data-lang="en"
+                                    crossorigin="anonymous"
+                                    async>
+                            </script>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -138,4 +162,3 @@
     </div>
 </body>
 </html>
-
